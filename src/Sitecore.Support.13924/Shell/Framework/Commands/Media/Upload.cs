@@ -180,7 +180,7 @@
           item.Uri.AddToUrlString(url);
           url.Append("edit", args.Parameters["edit"]);
           url.Add("sc_content", WebUtil.GetQueryString("sc_content"));
-          url.Add(State.Client.UsesBrowserWindowsQueryParameterName, args.Parameters[State.Client.UsesBrowserWindowsQueryParameterName]);
+          //url.Add(State.Client.UsesBrowserWindowsQueryParameterName, args.Parameters[State.Client.UsesBrowserWindowsQueryParameterName]);
           SheerResponse.ShowModalDialog(url.ToString(), "450", "200", string.Empty, true);
         }
 
